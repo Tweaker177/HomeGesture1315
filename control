@@ -1,0 +1,9 @@
+Package: com.i0stwesk3r.homegesture1315
+Name: HomeGesture1315
+Author: i0stweak3r
+Description: Home gestures to older devices 
+Depends: mobilesubstrate, preferenceloader
+Maintainer: i0s_tweak3r <djvs23@gmail.com>
+Architecture: iphoneos-arm
+Section: Tweaks
+Version: 0.0.1
