@@ -27,6 +27,11 @@
 
 %hook CCUIOverlayStatusBarPresentationProvider
 - (void)_addHeaderContentTransformAnimationToBatch:(id)arg1 transitionState:(id)arg2 {
+    // iOS 15 relies on this animation to present the Control Center status bar.
+    // Preserve the existing behavior on earlier supported iOS versions.
+    if (@available(iOS 15.0, *)) {
+        %orig;
+    }
 }
 %end
 
